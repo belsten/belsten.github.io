@@ -17,21 +17,129 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
+# title: Alex Belsten
+# email: afbelsten@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   I am Alex Belsten and I am an undergraduate studying Computer and Systems Engineering at RPI.
+#   I am interested in neuroscience, ML, statistical modeling and signal processing. In my free
+#   time I enjoy climbing, biking or running. Big fan of oat milk.
 
-title: Alex Belsten
-email: afbelsten@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I am Alex Belsten and I am an undergraduate studying Computer and Systems Engineering at RPI.
-  I am interested in neuroscience, ML, statistical modeling and signal processing. In my free
-  time I enjoy climbing, biking or running. Big fan of oat milk.
-baseurl         : "" # the subpath of your site, e.g. /blog
-url             : "https://belsten.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username :  belsten
+locale                   : "en-US"
+title                    : "Alex Belsten"
+title_separator          : "-"
+name                     : "Alex Belsten"
+description              : "Applied mathematics, deep learning, neuroscience, causality"
+url                      : "https://belsten.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+gh_repo                  :
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : #"disqus" # , "facebook", "google-plus", custom"
+  disqus:
+    shortname            : #overflow-1 # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+
+# Site Author
+author:
+  name             : "Alex Belsten"
+  avatar           : "/assets/belsten.JPG"
+  bio              : "Undergrad studying Computer and Systems Engineering."
+  location         : "RPI, Troy, NY"
+  email            : "afbelsten at gmail dot com"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : belsten
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : alexander-belsten-14b075135
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # _trips
+  - scope:
+      path: ""
+      type: trips
+    values:
+      layout: single
+      author_profile: false
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
