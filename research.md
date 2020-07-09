@@ -15,11 +15,16 @@ These devices include:
 * [g.tec Estim PRO Switching Unit](https://www.gtec.at/product/gestim-pro/) that enables automatic switching of channels for cortical stimulation
 
 I also improved support for peripheral inputs to BCI2000 such as parallel port recording and webcam devices.
+### Accepted Papers
+**Hardware Abstraction to Facilitate the Dissemination and Validation of Electrophysiological Experiments**, Alexander Belsten, Markus Adamek, Peter Brunner. One-page research paper and presentation accepted at 42nd EMBS 2020 conference.
 
-Submitted accepted one-page research paper and presentation by 42nd IEEE Engineering in Medicine and Biology Society, (EMBS), July 20-24, 2020, Montréal, Québec, Canada. **Hardware Abstraction to Facilitate the Dissemination and Validation of Electrophysiological Experiments**, Alexander Belsten, Markus Adamek, Peter Brunner. 
+Discussed the necessity of an abstraction layer over heterogeneous bio-signal hardware and how that abstraction layer, and BCI2000, enables collaboration and the validation of science.
 
 ## Bio-Inspired Fly-by-Feel Aerospace Vehicles
 <p style="text-align: center"><img src="../assets/MCNN_arch.png" width="60%" align="middle"></p>
 
 
-Applied machine learning techniques to time series data in order to predict flight state of fly-by-feel aircraft. A variety of non-parametric CNN architectures were implemented in order to learn how the flight state (such as angle of attack and airspeed) can be best identified. Also interested in **why** a specific architecture has better, or worst, results and what those results can tell us about the dynamics of the system.
+Applied machine learning techniques to time series data in order to predict flight state of fly-by-feel aircraft. A variety of non-parametric CNN architectures were implemented in order to learn how the flight state (such as angle of attack and airspeed) can be best identified. Also interested in **why** a specific architecture has better, or worse, results and what those results can tell us about the dynamics of the system.
+
+## In the future...
+In December 2020 I will be joining Dr. Peter Brunner's lab at Washington University in St. Louis, Missouri. While there, I will continue to maintain BCI2000 as well as expand my involvement in neuro-based research.
