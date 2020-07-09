@@ -16,6 +16,7 @@ These devices include:
 
 I also improved support for peripheral inputs to BCI2000 such as parallel port recording and webcam devices.
 
+Submitted accepted one-page research paper and presentation by 42nd IEEE Engineering in Medicine and Biology Society, (EMBS), July 20-24, 2020, Montréal, Québec, Canada. **Hardware Abstraction to Facilitate the Dissemination and Validation of Electrophysiological Experiments**, Alexander Belsten, Markus Adamek, Peter Brunner. 
 
 ## Bio-Inspired Fly-by-Feel Aerospace Vehicles
 <p style="text-align: center"><img src="../assets/MCNN_arch.png" width="60%" align="middle"></p>
