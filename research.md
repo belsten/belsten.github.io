@@ -26,5 +26,9 @@ Discussed the necessity of an abstraction layer over heterogeneous bio-signal ha
 
 Applied machine learning techniques to time series data in order to predict flight state of fly-by-feel aircraft. A variety of non-parametric CNN architectures were implemented in order to learn how the flight state (such as angle of attack and airspeed) can be best identified. Also interested in **why** a specific architecture has better, or worse, results and what those results can tell us about the dynamics of the system.
 
+
 ## In the future...
 In December 2020 I will be joining Dr. Peter Brunner's lab at Washington University in St. Louis, Missouri. While there, I will continue to maintain BCI2000 as well as expand my involvement in neuro-based research.
+
+## Oat Milk Research
+Work in progress... Come back soon.
