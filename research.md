@@ -20,11 +20,9 @@ I also improved support for peripheral inputs to BCI2000 such as parallel port r
 Discussed the necessity of an abstraction layer over heterogeneous bio-signal hardware and how that abstraction layer enables collaboration and the validation of electrophysiological experiments.
 
 ## Bio-Inspired Fly-by-Feel Aerospace Vehicles
-<p style="text-align: center"><img src="../assets/MCNN_arch.png" width="60%" align="middle"></p>
-
 <p float="middle">
-  <img src="../assets/windowed_STD.png"   width="40%" />
-  <img src="../assets/branchCNN_arch.png" width="40%" />
+  <img src="../assets/windowed_STD.png"   width="50%" />
+  <img src="../assets/branchCNN_arch.png" width="50%" />
 </p>
 
 
