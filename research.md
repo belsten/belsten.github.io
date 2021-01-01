@@ -26,11 +26,8 @@ Discussed the necessity of an abstraction layer over heterogeneous bio-signal ha
 </p>
 
 
-Designed a multi-branch one-dimensional convolutional neural network to predict the flight state of fly-by-feel aircraft using data recorded from the surface of an airfoil. Interested in **why** a specific architecture has better, or worse, results and what those results can tell us about the system's dynamics and information present at each sensor.
+Designed a multi-branch one-dimensional convolutional neural network to predict the flight state of fly-by-feel aircraft using data recorded from the surface of an airfoil. Interested in **why** a specific architecture has better, or worse, results and what those results can tell us about the system's dynamics and information present at each sensor. Abstract detailing preliminary results submitted to 2021 AIAA AVIATION forum.
 
-
-## In the future...
-In December 2020 I will be joining Dr. Peter Brunner's lab at Washington University in St. Louis, Missouri. While there, I will continue to maintain BCI2000 as well as expand my involvement in neuro-based research.
 
 ## Oat Milk Research
 Work in progress... Come back soon.

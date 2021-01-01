@@ -13,7 +13,4 @@ header:
 
 ## Bio
 
-I am an undergraduate studying Computer and Systems Engineering at RPI.
-I am interested in neuroscience, ML, statistical modeling and signal processing. In my free time I enjoy climbing, cycling or running. I also sometimes make small chairs. Big fan of oat milk.
-
-My graduation date from Rensselaer Polytechnic Institute is December 2020 and I am looking to pursue graduate education for the fall of 2021.
+I am interested in neuroscience, ML, statistical modeling and signal processing. I recently received my B.S. in Computer and Systems Engineering from RPI. In my free time I enjoy climbing, cycling or running. I also sometimes make small chairs. Big fan of oat milk.
