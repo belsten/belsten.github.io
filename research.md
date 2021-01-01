@@ -21,8 +21,8 @@ Discussed the necessity of an abstraction layer over heterogeneous bio-signal ha
 
 ## Bio-Inspired Fly-by-Feel Aerospace Vehicles
 <p float="middle">
-  <img src="../assets/windowed_STD.png"   width="50%" />
-  <img src="../assets/branchCNN_arch.png" width="50%" />
+  <img src="../assets/branchCNN_arch.png" width="70%" />
+  <img src="../assets/windowed_STD.png"   width="70%" />
 </p>
 
 
