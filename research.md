@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-## Washington University at St. Louis School of Medicine
+## Washington University in St. Louis School of Medicine
 
 ### Invasive Cortical Stimulation
 <p float="middle">
