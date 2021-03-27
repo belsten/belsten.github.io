@@ -13,4 +13,4 @@ header:
 
 ## Bio
 
-I am interested in neuroscience, ML, statistical modeling and signal processing. I recently received my B.S. in Computer and Systems Engineering from RPI. In my free time I enjoy climbing, cycling or running. I also sometimes make small chairs. Big fan of oat milk.
+I am interested in neuroscience, ML, statistical modeling, and signal processing. I recently received my B.S. in Computer and Systems Engineering from Rensselaer Polytechnic Institute. In my free time I enjoy climbing, cycling or running. I also sometimes make small chairs. Big fan of oat milk.

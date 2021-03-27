@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #
-# title: Alex Belsten
+# title: Alexander Belsten
 # email: afbelsten@gmail.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   I am Alex Belsten and I am an undergraduate studying Computer and Systems Engineering at RPI.
@@ -28,7 +28,7 @@
 locale                   : "en-US"
 title                    : "About"
 title_separator          : "-"
-name                     : "Alex Belsten"
+name                     : "Alexander Belsten"
 description              : ""
 url                      : "https://belsten.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  # the subpath of your site, e.g. "/blog"
@@ -48,9 +48,9 @@ comments:
 
 # Site Author
 author:
-  name             : "Alex Belsten"
+  name             : "Alexander Belsten"
   avatar           : "/assets/belsten.JPG"
-  bio              : "Undergrad studying Computer and Systems Engineering."
+  bio              : "Research Assistant at Dept. of Neurosurgery"
   location         : "Washington University in St. Louis"
   email            : "afbelsten at gmail dot com"
   uri              :
