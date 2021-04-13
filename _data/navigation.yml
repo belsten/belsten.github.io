@@ -1,11 +1,11 @@
 # main links links
 main:
 
+  - title: "STL"
+    url: /st-louis/
+
   - title: "Research"
     url: /research/
 
   - title: "Resume"
     url: /resume/
-
-  # - title: "Code"
-  #   url: /code/
