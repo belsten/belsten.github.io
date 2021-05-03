@@ -11,8 +11,8 @@ permalink: /research/
   <img src="../assets/cortical_stim.png" width="70%" />
 </p>
 In the Department of Neurosurgery at WashU, I developed a system to explore cortical areas with electrical stimulation via ECoG and SEEG, which significantly improves the efficiency of collecting CCEP (cortico-cortical evoked potentials) data. This system also provides the technical basis to perform closed-loop  stimulation over hundreds of electrode sites.
-[//]: <> (It is currently in use at Mayo Clinic and will be adopted by additional institutions, such as the Stanford School of Medicine.)
 This system is built on BCI2000, [g.tec cortical stimulator](https://www.gtec.at/product/gestim-pro/), and g.tec switching unit.
+
 ## National Center for Adaptive Neurotechnologies
 At [NCAN](https://www.neurotechcenter.org/) I worked on maintaining and improving
 [BCI2000](https://www.bci2000.org/mediawiki/index.php/Main_Page), a [general purpose software for brain-computer interfacing](http://belsten.github.io/doc/BCI2000_A_General-Purpose_Brain-Computer.pdf). I added support for a variety of bio-signal acquisition devices.
