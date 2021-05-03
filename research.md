@@ -6,12 +6,12 @@ permalink: /research/
 
 ## Washington University in St. Louis School of Medicine
 
-### Invasive Cortical Stimulation
+### Intracranial Stimulation
 <p float="middle">
   <img src="../assets/cortical_stim.png" width="70%" />
 </p>
-In the Department of Neurosurgery at WashU, I developed a system to explore cortical areas with electrical stimulation via ECoG and SEEG, which significantly improves the efficiency of collecting CCEP (cortico-cortical evoked potentials) data. This system also provides the technical basis to perform closed-loop cortical stimulation over hundreds of electrode sites. It is currently in use at Mayo Clinic and will be adopted by additional institutions, such as the Stanford School of Medicine.
-
+In the Department of Neurosurgery at WashU, I developed a system to explore cortical areas with electrical stimulation via ECoG and SEEG, which significantly improves the efficiency of collecting CCEP (cortico-cortical evoked potentials) data. This system also provides the technical basis to perform closed-loop  stimulation over hundreds of electrode sites.
+[//]: <> (It is currently in use at Mayo Clinic and will be adopted by additional institutions, such as the Stanford School of Medicine.)
 This system is built on BCI2000, [g.tec cortical stimulator](https://www.gtec.at/product/gestim-pro/), and g.tec switching unit.
 ## National Center for Adaptive Neurotechnologies
 At [NCAN](https://www.neurotechcenter.org/) I worked on maintaining and improving
