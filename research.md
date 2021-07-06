@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: single
 title: Research
