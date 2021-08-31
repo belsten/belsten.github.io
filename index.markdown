@@ -13,8 +13,8 @@ header:
 
 ## Bio
 
-I am an excited incoming Vision Science Ph.D. student at UC Berkeley. I plan to work with  Dr. Bruno Olshausen at the [Redwood Center for Theoretical Neuroscience](https://redwood.berkeley.edu).
+I am a first-year Ph.D. student at UC Berkeley at the [Redwood Center for Theoretical Neuroscience](https://redwood.berkeley.edu), advisied by Dr. Bruno Olshausen.
 
-I am interested in neuroscience, machine learning, statistical modeling, and signal processing. In 2020, I received my B.S. in computer and systems engineering from Rensselaer Polytechnic Institute in Troy, NY. From 2018 to the present, I've had the fortunate opportunity to do research at the [National Center for Adaptive Neurotechnologies](https://www.neurotechcenter.org) in Albany NY and WashU, School of Medicine, where I develop BCI2000 and get to work with the latest bidirectional neural devices.
+I am interested in neuroscience, machine learning, statistical modeling, and signal processing. In 2020, I received my B.S. in computer and systems engineering from Rensselaer Polytechnic Institute in Troy, New York. From 2018 to the present, I've had the fortunate opportunity to do research with Dr. Peter Brunner at the [National Center for Adaptive Neurotechnologies](https://www.neurotechcenter.org) in Albany, New York and Washington University in St. Louis, Dept. of Neurosurgery, where I developed BCI2000 and got to work with the latest intracranial recording and stimulation neural devices.
 
 In my free time, I enjoy climbing, cycling, and running (not at the same time). Big fan of oat milk and found free stuff.
