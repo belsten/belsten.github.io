@@ -3,4 +3,4 @@ layout: single
 title: CV
 permalink: /cv/
 ---
-[Link](http://belsten.github.io/doc/Alexander_Belsten_CV.pdf) to CV download. Updated 04/10/2022
+[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 04/30/2022
