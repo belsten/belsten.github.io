@@ -130,9 +130,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: true
+      comments: false
       share: true
-      related: true
+      related: false
   # _trips
   - scope:
       path: ""
