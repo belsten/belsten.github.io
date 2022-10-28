@@ -8,8 +8,12 @@ tags:
   - Jekyll
   - update
 ---
+<p float="middle">
+  <img src="../../assets/latex-hats.png" width="80%" />
+</p>
 
-$$
+```
+\documentclass{article}
 \usepackage{pict2e}
 
 \DeclareRobustCommand{\howdyhat}{%
@@ -72,6 +76,8 @@ $$
 \newcommand\party[1]{\popacaponit{#1}{\partyhat}}
 \newcommand\abe[1]{\popacaponit{#1}{\abehat}}
 \newcommand\witch[1]{\popacaponit{#1}{\witchhat}}
-$$
 
-$$\howdy{x} \ \ \ \ \party{x} \ \ \ \ \abe{x} \ \ \ \ \witch{x} $$
+\begin{document}
+$$\howdy{x} \ \ \ \ \party{x} \ \ \ \ \abe{x} \ \ \ \ \witch{x}$$
+\end{document}
+```
