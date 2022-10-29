@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Modernizing Hat Operators in Latex"
 date: 2022-10-27
 categories:
   - blog
@@ -8,6 +8,8 @@ tags:
   - Jekyll
   - update
 ---
+
+
 <p float="middle">
   <img src="../../assets/latex-hats.png" width="80%" />
 </p>
