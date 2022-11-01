@@ -8,7 +8,7 @@ tags:
   - Jekyll
   - update
 ---
-
+\LaTeX? 
 
 <p float="middle">
   <img src="../../assets/latex-hats.png" width="80%" />
