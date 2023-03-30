@@ -1,6 +1,6 @@
 ---
 title: "Modernizing Hat Operators in Latex"
-date: 2022-10-27
+date: 2023-03-30
 categories:
   - blog
 tags:
