@@ -24,7 +24,7 @@ BibTeX entry for post:
 ```
 @misc{belsten2023hats,
   author = {Belsten, Alexander},
-  title = {{Modernizing Hat Operators in Latex}},
+  title = {Modernizing Hat Operators in Latex},
   howpublished = "\url{https://belsten.github.io/blog/latex-hats/}",
   date = {2023-03-30}
 }
