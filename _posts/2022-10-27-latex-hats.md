@@ -8,12 +8,30 @@ tags:
   - Jekyll
   - update
 ---
-\LaTeX? 
+
+Are you tired of the same old hat operators? Does ```\bar{}``` or ```\hat{}``` make you want to yawn? Even worse, is the boredom induced by these markers causing you to fall behind in classes? 
+
+I say out with the old, in with the new, so check out these hats. Engaging enough to get you that A, subtle enough to let the math do the talking. 
+
 
 <p float="middle">
   <img src="../../assets/latex-hats.png" width="80%" />
 </p>
 
+---
+
+BibTeX entry for post:
+```
+@misc{belsten2023hats,
+  author = {Belsten, Alexander},
+  title = {{Modernizing Hat Operators in Latex}},
+  howpublished = "\url{https://belsten.github.io/blog/latex-hats/}",
+  date = {2023-03-30}
+}
+```
+
+---
+How to reproduce:
 ```
 \documentclass{article}
 \usepackage{pict2e}
