@@ -15,4 +15,4 @@ I am a second-year Ph.D. candidate at UC Berkeley at the [Redwood Center for The
 
 In 2020, I received my B.S. in computer and systems engineering from Rensselaer Polytechnic Institute. From 2018 to 2022, I adapted intracranial recording and neural stimulation devices for research use with Dr. Peter Brunner at the [National Center for Adaptive Neurotechnologies](https://www.neurotechcenter.org) in Albany, New York, and  Dept. of Neurosurgery at Washington University in St. Louis.
 
-In my free time, I enjoy running, biking, and surfing -- also a big fan of oat milk and finding free stuff.
+In my free time, I enjoy running, biking, and surfing -- also a big fan of ~~oat~~ chocolate milk and finding free stuff.
