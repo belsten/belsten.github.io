@@ -1,14 +1,8 @@
 # main links links
 main:
 
-  - title: "STL"
-    url: /st-louis/
-
   - title: "Research"
     url: /research/
-
-  - title: "CV"
-    url: /cv/
 
   - title: "Posts"
     url: /posts/
