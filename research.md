@@ -4,6 +4,9 @@ title: Research
 permalink: /research/
 ---
 
+## Curriculum Vitae
+[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 4/13/2022
+
 ## Papers
 * Schalk, Worrell, Mivalt, **Belsten**, Kim, Morris, Hermes, Klassen, Staff, Messina, Kaufmann, Rickert, Brunner, Worrell, Miller "Towards a Fully Implantable Ecosystem for Adaptive Neuromodulation in Humans: Preliminary Experience with the CorTec BrainInterchange Device in a Canine Model", Frontiers in Neuroscience 2022
 * Bybee, **Belsten**, Sommer "Cross-Frequency Coupling Increases Memory Capacity in Oscillatory Neural Networks" [arxiv](https://arxiv.org/abs/2204.07163) 2022
