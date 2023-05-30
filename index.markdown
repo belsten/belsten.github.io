@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: single
-title:
+title: Home
 permalink:
 header:
   overlay_image : assets/good.png
