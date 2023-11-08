@@ -9,9 +9,10 @@ header:
 ---
 
 ## Curriculum Vitae
-[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 4/13/2022
+[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 11/8/2022
 
 ## Papers
+* Demarest, Rustamov, Swift, Xie, Adamek, Cho, Wilson, Han, **Belsten**, Luczak, Brunner, Haroutounian, Leuthardt "A Novel Theta-Controlled Vibrotactile Brain-Computer Interface To Treat Chronic Pain: A Pilot Study", in preparation 2023
 * Schalk, Worrell, Mivalt, **Belsten**, Kim, Morris, Hermes, Klassen, Staff, Messina, Kaufmann, Rickert, Brunner, Worrell, Miller "Towards a Fully Implantable Ecosystem for Adaptive Neuromodulation in Humans: Preliminary Experience with the CorTec BrainInterchange Device in a Canine Model", Frontiers in Neuroscience 2022
 * Bybee, **Belsten**, Sommer "Cross-Frequency Coupling Increases Memory Capacity in Oscillatory Neural Networks" [arxiv](https://arxiv.org/abs/2204.07163) 2022
 * **Belsten**, Kopsaftopoulos "Data-Driven Flight State Identification via Time-Series-Informed Features and Convolutional Neural Network", AIAA AVIATION Forum 2021
