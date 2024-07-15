@@ -9,7 +9,7 @@ header:
 ---
 
 ## Curriculum Vitae
-[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 11/8/2023
+[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 7/15/2024
 
 ## Papers
 * Demarest, Rustamov, Swift, Xie, Adamek, Cho, Wilson, Han, **Belsten**, Luczak, Brunner, Haroutounian, Leuthardt "A Novel Theta-Controlled Vibrotactile Brain-Computer Interface To Treat Chronic Pain: A Pilot Study", in preparation 2023
