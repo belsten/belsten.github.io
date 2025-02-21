@@ -9,7 +9,7 @@ header:
 ---
 
 ## Curriculum Vitae
-[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 1/30/2025
+[Link](http://belsten.github.io/doc/alexanderbelsten_cv.pdf) to CV download. Updated 2/20/2025
 
 ## Sparsecoding repositiory
 I'm an active contributor/maintainer of the [sparsecoding](https://github.com/rctn/sparsecoding) repository, which provides performant implementations of sparse coding-related algorithms in the [pytorch](https://pytorch.org) framework.
