@@ -11,8 +11,6 @@ header:
   exceprt: "     "
 ---
 
-I am a fourth-year Ph.D. candidate at UC Berkeley at the [Redwood Center for Theoretical Neuroscience](https://redwood.berkeley.edu), advised by Dr. Bruno Olshausen. I am interested in computational neuroscience, theoretical neuroscience, vision, signal processing, and machine learning.
+I am a postdoctoral researcher at UC Berkeley at the [Redwood Center for Theoretical Neuroscience](https://redwood.berkeley.edu). I received my PhD at UC Berkeley in 2025 under the supervision of Dr. Bruno Olshausen. I am interested in computational neuroscience, theoretical neuroscience, vision, signal processing, and machine learning.
 
 In 2020, I received my B.S. in computer and systems engineering from Rensselaer Polytechnic Institute. From 2018 to 2022, I adapted intracranial recording and neural stimulation devices for research use with Dr. Peter Brunner at the [National Center for Adaptive Neurotechnologies](https://www.neurotechcenter.org) in Albany, New York, and  Dept. of Neurosurgery at Washington University in St. Louis.
-
-In my free time, I enjoy running, biking, and surfing -- also a big fan of ~~oat~~ chocolate milk and finding free stuff.
