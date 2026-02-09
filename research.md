@@ -3,7 +3,7 @@ layout: single
 title: " "
 permalink: /research/
 header:
-  overlay_image : assets/research_header.png
+  # overlay_image : assets/research_header.png
   overlay_filter: 0 # same as adding an opacity of 0.5 to a black background
   exceprt: "     "
 ---
