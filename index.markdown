@@ -17,16 +17,17 @@ I received a B.S. in computer and systems engineering from Rensselaer Polytechni
 
 
 ## News
+- **March 2026** - Our new [preprint](https://arxiv.org/abs/2603.24293) ties the ellusive unique hues (red, green, blue, and yellow) to the higher-order statistics of color in natural images.
 
-- **February 2026** — Presented joint work with Zeyu Yun on sparse coding at the [Energy Consequences of Information Workshop](https://www.energyconsequences.com) in Santa Fe, NM.
+- **February 2026** - Presented joint work with Zeyu Yun on sparse coding at the [Energy Consequences of Information Workshop](https://www.energyconsequences.com) in Santa Fe, NM.
 
-- **January 2026** — Gave a guest lecture in *Neurally Inspired Algorithms and Architectures* at UC Davis (Instructor: Anthony Thomas) on efficient coding.
+- **January 2026** - Gave a guest lecture in *Neurally Inspired Algorithms and Architectures* at UC Davis (Instructor: Anthony Thomas) on efficient coding.
 
-- **December 2025** — Graduated with my Ph.D. from UC Berkeley.
+- **December 2025** - Graduated with my Ph.D. from UC Berkeley.
 
-- **November 2025** — Presented joint work with Zeyu Yun on sparse coding at the Society for Neuroscience (SfN) Annual Meeting.
+- **November 2025** - Presented joint work with Zeyu Yun on sparse coding at the Society for Neuroscience (SfN) Annual Meeting.
 
 
-- **May 2025** — Presented research at the Vision Sciences Society (VSS) Annual Meeting in St. Pete Beach, FL.
+- **May 2025** - Presented research at the Vision Sciences Society (VSS) Annual Meeting in St. Pete Beach, FL.
 
-- **April 2025** — Published a paper in *Journal of the Optical Society of America A* on efficient coding in the retina.
+- **April 2025** - Published a paper in *Journal of the Optical Society of America A* on efficient coding in the retina.
