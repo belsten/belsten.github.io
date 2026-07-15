@@ -19,7 +19,7 @@ I received a B.S. in computer and systems engineering from Rensselaer Polytechni
 ## News
 - **July 2026** - Our work linking the unique hues to the statistics of color in natural images was published in [*Journal of the Optical Society of America A*](https://opg.optica.org/josaa/fulltext.cfm?uri=josaa-43-8-1210). 
 
-- **March 2026** - Accepted a postdoctoral membership at the Institute for Advanced Study, where I will participate in the [Special Year on Modeling Fly Vision](https://www.ias.edu/sns/csb) starting September 1st, 2026.
+- **April 2026** - Accepted a postdoctoral membership at the Institute for Advanced Study, where I will participate in the [Special Year on Modeling Fly Vision](https://www.ias.edu/sns/csb) starting September 1st, 2026.
 
 - **March 2026** - Our new [preprint](https://arxiv.org/abs/2603.24293) ties the ellusive unique hues (red, green, blue, and yellow) to the higher-order statistics of color in natural images.
 
