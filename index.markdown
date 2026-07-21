@@ -17,13 +17,15 @@ I received a B.S. in computer and systems engineering from Rensselaer Polytechni
 
 
 ## News
+- **July 2026** - Our new [preprint](https://arxiv.org/abs/2607.15693), led by Zeyu Yun, develops a non-factorial sparse coding model of primary visual cortex (V1) and links its recurrent inference dynamics to mechanisms underlying diffusion models.
+
 - **July 2026** - Our work linking the unique hues to the statistics of color in natural images was published in [*Journal of the Optical Society of America A*](https://opg.optica.org/josaa/fulltext.cfm?uri=josaa-43-8-1210). 
 
 - **April 2026** - Accepted a postdoctoral membership at the Institute for Advanced Study, where I will participate in the [Special Year on Modeling Fly Vision](https://www.ias.edu/sns/csb) starting September 1st, 2026.
 
 - **March 2026** - Our new [preprint](https://arxiv.org/abs/2603.24293) ties the ellusive unique hues (red, green, blue, and yellow) to the higher-order statistics of color in natural images.
 
-- **February 2026** - Presented joint work with Zeyu Yun on sparse coding at the [Energy Consequences of Information Workshop](https://www.energyconsequences.com) in Santa Fe, NM.
+- **February 2026** - Presented joint work with Zeyu Yun on non-factorial sparse coding at the [Energy Consequences of Information Workshop](https://www.energyconsequences.com) in Santa Fe, NM.
 
 - **January 2026** - Gave a guest lecture in *Neurally Inspired Algorithms and Architectures* at UC Davis (Instructor: Anthony Thomas) on efficient coding.
 
