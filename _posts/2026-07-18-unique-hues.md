@@ -195,7 +195,7 @@ Recall that sparse inference will only use at most two basis vectors at a time t
 As the target moves around the hue circle, neighboring basis vectors can be active together to represent intermediate hues. By contrast, red and green are never coactive, nor are blue and yellow. This opposition was not imposed on the model but emerges from sparse inference.
 
 <figure style="text-align: center;">
-  <img src="../../assets/unique-hues/nonlin-inference.pdf" width="100%" alt="Four basis vectors training animation" />
+  <img src="../../assets/unique-hues/nonlin-inference.png" width="100%" alt="Four basis vectors training animation" />
   <figcaption><strong>Figure 8</strong>: Sparse inference with the four learned nonorthogonal basis vectors in the data $\mathbf{x}$ space (left) allows for the construction of a perceputally parsiomenious color space where the orthogonal axes are the activations of sparse coefficients that represent the unique hues. Two example points show how intermidate hues (purple and greenish) map from the data space to the color opponent space defined by the coefficients.</figcaption>
 </figure>
 
