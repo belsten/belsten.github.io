@@ -1,6 +1,8 @@
 ---
 title: "Modernizing Hat Operators in Latex"
 date: 2023-03-30
+excerpt: "Are you tired of the same old hat operators?"
+show_excerpt: true
 categories:
   - blog
 tags:
@@ -9,7 +11,7 @@ tags:
   - update
 ---
 
-Are you tired of the same old hat operators? Does ```\bar{}``` or ```\hat{}``` make you want to yawn? Even worse, is the boredom induced by these markers causing you to fall behind in classes? 
+Does ```\bar{}``` or ```\hat{}``` make you want to yawn? Even worse, is the boredom induced by these markers causing you to fall behind in classes? 
 
 I say out with the old, in with the new, so check out these hats. Engaging enough to get you that A, subtle enough to let the math do the talking. 
 
