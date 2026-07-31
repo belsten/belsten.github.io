@@ -158,7 +158,7 @@ We seek to understand how color is distributed in this dataset. 225 million data
 
 As a reminder, a color’s position in the chromatic plane represents its hue and saturation: hue corresponds to angular direction, while chromatic saturation corresponds to radial distance from the origin.
 
-The largest probability contour is near the origin, meaning that most pixels are relatively achromatic (colorless). Lower probability contours are further from the origin indicating that highly saturated colors are more rare. However, the iso-probability contours are not perfect circles. Instead, they’re anisotropic and extend in certain hue directions — most notably toward red. Colors in natural scenes are not distributed equally across hue directions. 
+The largest probability contour is near the origin, meaning that most pixels are relatively achromatic (colorless). Lower probability contours are further from the origin indicating that highly saturated colors are rarer. However, the iso-probability contours are not perfect circles. Instead, they’re anisotropic and extend in certain hue directions — most notably toward red. Colors in natural scenes are not distributed equally across hue directions. 
 
 
 The distribution is also asymmetric: hue directions that are opposite to one another in the space do not necessarily have the same shape. We find that this structure is generally persistent across heterogeneous datasets.
