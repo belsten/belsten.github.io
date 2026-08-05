@@ -50,7 +50,7 @@ More than a century later, the unique hues and their opponent nature still serve
 
 
 
-Our study suggests that the answer to the perceptual mystery lies in the distribution of colors present in the natural world. By simulating how each of the three types of human cone photoreceptors respond to hundreds of millions of points sampled from natural scenes, obtained from publicly available datasets of calibrated color images acquired from diverse locations around the world, we find that the distribution of colors is non random. Most pixels are relatively achromatic (colorless), while highly saturated colors are rarer. But those rare colors are not spread equally in every direction: some occur with greater saturation consistently more often than others. To characterize this structure in the distribution, we fit a sparse coding model to the data, which learns a set of basis vectors that would optimally span this space in order to form a sparse representation. When the sparse coding model is given four basis vectors to describe hue, they align with the unique hues -- red, green, blue, and yellow. Moreover, the opposing nature of red-green and blue-yellow also emerges from the model since these vectors are never used in combination to describe any other color, exactly as proposed by Hering more than a century ago. Together, these findings shed new light on the distribution of color in the natural environment and provide a linking principle between this structure and the phenomenology of color appearance.
+Our study suggests that the answer to the perceptual mystery lies in the distribution of colors present in the natural world. By simulating how each of the three types of human cone photoreceptors respond to hundreds of millions of points sampled from natural scenes, obtained from publicly available datasets of calibrated color images acquired from diverse locations around the world, we find that the distribution of colors is non-random. Most pixels are relatively achromatic (colorless), while highly saturated colors are rarer. But those rare colors are not spread equally in every direction: some occur with greater saturation consistently more often than others. To characterize this structure in the distribution, we fit a model to the data that finds a set of basis vectors to optimally span color space such that a weighted sum of them can describe any color using a minimal total sum of weights on average. When the model is given four basis vectors to describe hue, they converge on the unique hues -- red, green, blue, and yellow. Moreover, the opposing nature of red-green and blue-yellow also emerges from the model since these vectors are never used in combination to describe any other color, exactly as proposed by Hering more than a century ago. Together, these findings shed new light on the distribution of color in the natural environment and provide a linking principle between this structure and the phenomenology of color appearance.
 
 
 
@@ -59,18 +59,20 @@ Our study suggests that the answer to the perceptual mystery lies in the distrib
 
 Hering was, in effect, describing the unique hues as a natural basis for reasoning about colors. This idea can be formalized using the mathematical concept of a basis: a collection of elementary directions that can be combined to represent other points in a space.
 
-For example, a hue can be represented as a vector pointing in a particular direction in color space. A color $\mathbf{x}$ can be reconstructed through a superposition of $m$ basis vectors $\mathbf{a}_i$ weighted by coefficients $s_i$,
 
-$$\mathbf{x} = \sum_{i=1}^m \mathbf{a}_i\, s_i.$$
+For example, a hue can be represented as a point in color space. Just as there are infinitely many points in a real-valued space, there are infinitely many hues.  But any given point $\mathbf{x}$ can be described through a linear combination of a finite set of $m$ basis vectors $\mathbf{a}_i$ weighted by coefficients $s_i$,
 
 
-The basis vectors specify the available elementary color directions, while the coefficients specify how much of each direction is used to represent a particular color.
+$$\mathbf{x} = \sum_{i=1}^m \mathbf{a}_i\, s_i \,,$$
+
+
+as long as $m$ is greater than or equal to the dimensionality of the space. The basis vectors specify the available elementary color directions, while the coefficients specify how much of each direction is used to represent a particular color.
 
 
 To keep the geometry simple, let's assume that changes in luminance have been accounted for, so only variation in hue and saturation needs to be considered. In the paper, we consider a full three-dimensional color space that includes luminance, but we can make the major points by just considering the chromatic plane, making color points $\mathbf{x}$ and basis vectors $\mathbf{a}_i$ two-dimensional. Within this color space, a color point’s saturation is given by its distance from the origin and its hue is given by its angle. 
 
 
-A nominal arrangement that spans this two-dimensional space is three basis vectors separated by 120${}^\circ$, forming a Mercedes-Benz frame. Such a basis is shown in Figure 2.
+A nominal arrangement that spans this two-dimensional space is a set of three basis vectors separated by 120${}^\circ$, forming a so-called `Mercedes-Benz frame’. Such a basis is shown in Figure 2.
 
 
 Given this basis, how should we choose the coefficients to represent a particular color? We use a **constructive** representation, meaning that the coefficients must be nonnegative: colors are represented by adding basis directions rather than subtracting them. We also favor **sparse** reconstructions, which favors using only a small number of basis vectors out the larger dictionary to reconstruct the data point.
@@ -101,7 +103,9 @@ The statistical model we’re describing is called **sparse coding**. Sparse cod
 
 **Mathematical details: sparse coding inference**
 
-While reconstructing a data point from the coefficients is linear $\mathbf{x} = \sum_i {a}_i\,s_i$, computing the coefficients $s_1,s_2,...,s_m$ given a datapoint $\mathbf{x}$ is a nonlinear.  For a given $\mathbf{x}$, the $s_i$ are computed by minimizing a sparse coding energy function $E$ subject to a nonnegativity constraint:
+
+While reconstructing a data point from the coefficients is linear, $\mathbf{x} = \sum_i {a}_i\,s_i$, computing the coefficients $s_1,s_2,...,s_m$ given a datapoint $\mathbf{x}$ is nonlinear.  For a given $\mathbf{x}$, the $s_i$ are computed by minimizing a sparse coding energy function $E$ subject to a nonnegativity constraint:
+
 
 $$
  \begin{align}
@@ -111,9 +115,11 @@ $$
 $$
 
 
-The first term in this energy function says that the coefficients should reconstruct the data point, and the second term is a $\ell_1$-sparsity inducing penalty that encourages using only a small number of basis vectors out the larger dictionary. The parameter $\lambda$ controls the trade-off between reconstruction quality and sparsity.
+The first term in this energy function says that the coefficients should reconstruct the data point, while the second term imposes a $\ell_1$-sparsity inducing penalty that encourages using only a small number of basis vectors out the larger dictionary $\{\mathbf{a}_i\}$. The parameter $\lambda$ controls the trade-off between reconstruction quality and sparsity.
 
-Given a set of basis vectors, the above optimization problem can be solved using a nonnegative variant of locally competitive algorithm (LCA; Rozell *et al.*, 2008). LCA evolves subthreshold variables $u_i$ whose thresholded outputs $s_i$ are the coefficients:
+
+Given a set of basis vectors, the above optimization problem can be solved using a nonnegative variant of the locally competitive algorithm (LCA; Rozell *et al.*, 2008). LCA evolves subthreshold variables $u_i$ whose thresholded outputs $s_i$ are the coefficients:
+
 
 $$
 \begin{align}
@@ -129,7 +135,8 @@ We refer to the process of computing the coefficients as inference because it is
 
 </div>
 
-So far, we have fixed the basis to a Mercedes-Benz frame. But this choice is arbitrary: infinitely many other arrangements could also represent every hue. To choose among them, we need an additional principle. One possibility is that the visual system adapts its representation to the colors it repeatedly encounters, favoring basis vectors that efficiently capture the statistical structure of the natural environment. Color perception has long been proposed to reflect such environmental statistics (e.g., Mollon & Jordan, 1997; Shepard, 1992; Skelton et al., 2024). Could this adaptation explain the unique hues?
+
+So far, we have fixed the basis to a Mercedes-Benz frame. But this choice is arbitrary: infinitely many other arrangements could also represent every hue. How should we choose among them? One possibility is that the visual system adapts its representation to the colors it repeatedly encounters, favoring basis vectors that efficiently capture the statistical structure of the natural environment. Color perception has long been proposed to reflect such environmental statistics (e.g., Mollon & Jordan, 1997; Shepard, 1992; Skelton et al., 2024). Could this adaptation explain the unique hues?
 
 
 # The distribution of color in natural images is highly non random
@@ -158,20 +165,20 @@ We seek to understand how color is distributed in this dataset. 225 million data
 
 As a reminder, a color’s position in the chromatic plane represents its hue and saturation: hue corresponds to angular direction, while chromatic saturation corresponds to radial distance from the origin.
 
-The largest probability contour is near the origin, meaning that most pixels are relatively achromatic (colorless). Lower probability contours are further from the origin indicating that highly saturated colors are rarer. However, the iso-probability contours are not perfect circles. Instead, they’re anisotropic and extend in certain hue directions — most notably toward red. Colors in natural scenes are not distributed equally across hue directions. 
+The largest probability contour is near the origin, meaning that most pixels are relatively achromatic (colorless). Lower probability contours are further from the origin indicating that highly saturated colors are more rare. However, the iso-probability contours are not perfect circles. Instead, they are anisotropic and extend in certain hue directions — most notably toward red. Colors in natural scenes are not distributed equally across hue directions. 
 
 
-The distribution is also asymmetric: hue directions that are opposite to one another in the space do not necessarily have the same shape. We find that this structure is generally persistent across heterogeneous datasets.
+The distribution is also asymmetric: hue directions that are opposite to one another in the space do not necessarily have the same probability profile. We find that this structure is generally persistent across heterogeneous datasets.
 
 
-In the plot above, we have computed the chromatic axes such that the data have unit variance in every direction (Ruderman *et al.*, 1998). This makes an isotropic Gaussian with identical variance a reference for what distribution of colors would be truly random. The contours of this distribution are overlaid in dashed lines. Importantly, if the distribution were Gaussian, the solid contours would follow the dashed contours exactly, but this is not the case. Comparing the isoprobability contours of the natural image distribution to those of the Gaussian reveals pronounced asymmetries and substantial deviations from Gaussianity. Colors in natural scenes have a non random distribution. Specifically, the distribution contains heavy-tailed structure as matched iso-probability contours of the true distribution extend further from the origin than that of the Gaussian.
+In the plot above, we have scaled the chromatic axes such that the data have unit variance in every direction (Ruderman *et al.*, 1998). This makes an isotropic Gaussian a reference for what distribution of colors would be truly random. The contours of this distribution are overlaid in dashed lines. Importantly, if the distribution were Gaussian, the solid contours would follow the dashed contours exactly, but this is not the case. Comparing the isoprobability contours of the natural image distribution to those of the Gaussian reveals pronounced asymmetries and substantial deviations from Gaussianity. Colors in natural scenes have a non random distribution. Specifically, the distribution contains heavy-tailed structure as matched iso-probability contours of the true distribution extend further from the origin than that of the Gaussian.
 
 
 
-These heavy tails and asymmetries are examples of **higher-order statistical structure** which can not be characterized using pair-wise correlations (Simoncelli & Olshausen, 2001). We think that this higher-order structure has implications for how the brain represents color.
+These heavy tails and asymmetries are examples of **higher-order statistical structure** which can not be characterized using pair-wise correlations (Simoncelli & Olshausen, 2001). We believe that this higher-order structure has implications for how the brain represents color.
 
 
-The idea that the brain is adapted to higher-order statistics in sensory input is not a new one. For example, David Field (1994) showed correspondence between the higher-order statistical structure of natural image patches and orientation-selective spatial receptive properties of simple-cells in visual cortex (which eventually led to the development of the sparse coding model). There is also correspondence between auditory nerve fiber tuning properties and the statistical structure of environmental sounds and vocalizations (Lewicki, 2002).
+The idea that the brain is adapted to higher-order statistics in sensory input is not a new one. For example, David Field (1987) showed correspondence between the higher-order statistical structure of natural image patches and orientation-selective spatial receptive properties of simple-cells in visual cortex (which eventually led to the development of the sparse coding model). There is also correspondence between auditory nerve fiber tuning properties and the statistical structure of environmental sounds and vocalizations (Lewicki, 2002).
 
 
 # Adapting the basis to model non-Gaussian structure
@@ -228,7 +235,8 @@ Human measurements suggest that the unique hues are not orthogonal to one anothe
 
 ## Emergence of color opponency
 
-A puzzling aspect of the unique hues is that opponent hues are not geometrically opposite to one another in physiologically defined color spaces based on cone responses and early visual processing. Why, then, are red and green perceived as opposites, and likewise blue and yellow? Also, what mathematical principles could reproduce such an opponent organization?
+
+What mathematical principles could reproduce such an opponent organization?
 
 
 Recall that sparse inference will only use at most two basis vectors at a time to represent a point in the two-dimensional color space. We find that this naturally gives rise to mutual exclusivity between basis vector coefficients that represent phenomenologically opposing colors (red/green and blue/yellow). Figure 7 demonstrates this. The left side of the plot shows how the point is reconstructed by combining the weighted basis vectors end-to-end, and the right side shows the coefficient magnitudes.
@@ -239,7 +247,8 @@ Recall that sparse inference will only use at most two basis vectors at a time t
 </figure>
 
 
-As the target moves around the hue circle, neighboring basis vectors can be active together to represent intermediate hues. By contrast, red and green are never coactive, nor are blue and yellow. This opposition was not imposed on the model but emerges from sparse inference.
+As the target moves around the hue circle, neighboring basis vectors activate together to represent intermediate hues. By contrast, red and green are never coactive, nor are blue and yellow. This opposition was not imposed on the model but emerges from sparse inference.
+
 
 <figure style="text-align: center;">
  <img src="../../assets/unique-hues/nonlin-inference.png" width="100%" alt="Four basis vectors training animation" />
@@ -249,7 +258,8 @@ As the target moves around the hue circle, neighboring basis vectors can be acti
 Although the learned basis vectors are not geometrically opposite in the original color space, their inferred coefficients can be reorganized into two signed opponent axes as shown in Figure 8. Red and green occupy opposite ends of one axis, while blue and yellow occupy opposite ends of the other. This two-dimensional opponent space captures the phenomenological organization of color experience.
 
 
-You might be wondering: *why favor four basis vectors over three?* Both models can represent any point in the color plane and thus form a complete code. You might argue that the three basis vector model is better aligned with the heavy-tails in the data. A distinction between them lies in the structure of the resulting sparse code. In the three-vector model, the coefficients exhibit a three-way dependency: when two are active, the third is silent. In the four-vector model, this dependency separates into two mutually exclusive pairs: red versus green and blue versus yellow. This points to a trade-off between being perfectly aligned with the data and a simple, distributed code.
+You might be wondering: *why favor four basis vectors over three?* Both models can represent any point in the color plane and thus form a complete code. You might argue that the three basis vector model is better aligned with the heavy-tails in the data. A distinction between them lies in the structure of the resulting sparse code. In the three-vector model, the coefficients exhibit a three-way dependency: when two are active, the third is silent. In the four-vector model, this dependency separates into two mutually exclusive pairs, red versus green and blue versus yellow, which can be collapsed back into two sets of opposing axes. This points to a trade-off between being perfectly aligned with the data vs. producing a parsimonious distributed code.
+
 
 # Conclusion
 
@@ -261,7 +271,7 @@ The two main contributions of this paper are (1) the finding of strongly non-Gau
 Conway, B. R., Malik-Moraleda, S., & Gibson, E. (2023). Color appearance and the end of Hering’s Opponent-Colors Theory. Trends in Cognitive Sciences, 27(9), 791-804.
 
 
-Field, D. J. (1994). What is the goal of sensory coding?. Neural computation, 6(4), 559-601.
+Field, D. J. (1987). Relations between the statistics of natural images and the response properties of cortical cells. Journal of the Optical Society of America A, 4(12), 2379-2394.
 
 
 Lewicki, M. S. (2002). Efficient coding of natural sounds. Nature neuroscience, 5(4), 356-363.
@@ -289,8 +299,3 @@ Simoncelli, E. P., & Olshausen, B. A. (2001). Natural image statistics and neura
 
 
 Skelton, A. E., Maule, J., Floyd, S., Wozniak, B., Majid, A., Bosten, J. M., & Franklin, A. (2024). Effects of visual diet on colour discrimination and preference. Proceedings of the Royal Society B: Biological Sciences, 291(2031), 20240909.
-
-
-
-
-
