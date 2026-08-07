@@ -32,7 +32,7 @@ Let’s begin with some history.
 Why do red, green, blue, and yellow seem more "pure" than other colors?
 
 
-For example, while the color purple might naturally be described as a combination of red and blue, it seems somewhat less intuitive to think of red as a combination of orange and purple, even though a mixture of those colors would produce red just as well as red + yellow produce orange. In other words, we tend to think of red as just red, not as a mixture. This same unique property holds for green, blue, and yellow: each appears perceptually pure rather than as a mixture of neighboring hues.
+For example, while the color purple might naturally be described as a combination of red and blue, it seems somewhat less intuitive to think of red as a combination of orange and purple, even though a mixture of those colors would produce red just as well as red + blue produce purple. In other words, we tend to think of red as just red, not as a mixture. This same unique property holds for green, blue, and yellow: each appears perceptually pure rather than as a mixture of neighboring hues.
 
 
 
