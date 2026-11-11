@@ -1,0 +1,38 @@
+{
+  "title": "FAFB wiring models",
+  "runs": [
+    {
+      "id": "fafb-anchors",
+      "name": "FAFB anchors",
+      "description": "Measured neuron anchor positions · axes in µm. 13 cells without finite anchors omitted.",
+      "cells": 136984,
+      "iteration": null,
+      "duration": null,
+      "source": "Supplemental neuron annotations",
+      "config": "model: FAFB anchors\ncoordinates: Supplemental neuron annotation anchors\ncoordinate_units: µm\nvoxel_to_um:\n- 0.004\n- 0.004\n- 0.04\ncells: 136984\nomitted_without_finite_anchors: 13\n",
+      "url": "data/fafb-anchors.json.gz"
+    },
+    {
+      "id": "fafb-optimized",
+      "name": "FAFB optimized",
+      "description": "Final saved neuron positions · axes in model units; orientation is arbitrary.",
+      "cells": 136997,
+      "iteration": 4200,
+      "duration": "3 h 29 min 59 s",
+      "source": "20261104-125554-541829Z",
+      "config": "graph_path: output/graphs/fafb/directed_graph.npz\ncells_path: output/graphs/fafb/cells.csv\noutput_dir: output/runs/fafb\ndevice: auto\ndtype: float32\np: 2\nseed: 4\ninitial_std: 0.1\nrescale_initial: true\ninitial_coordinates: output/runs/fafb/20261104-034741-314623Z/coordinates_latest.npy\nbatch_size: auto\nbatch_candidates:\n- 64\n- 128\n- 256\n- 512\n- 1024\n- 2048\n- 4096\n- 8192\n- 16384\n- 32768\n- 65536\n- 131072\nbatch_memory_mb: 16384\ncpu_threads: auto\nmax_iterations: 100000\nmax_evaluations: 30000\nmax_minutes: 0\nftol: 1.0e-12\ngtol: 1.0e-05\nmax_line_search_steps: 30\nlbfgs_history: 10\nsave_every_iterations: 2000\nsave_every_seconds: 10000000\nselected_device: cuda\nselected_batch_size: 2048\nselected_cpu_threads: 4\nbatch_benchmark:\n- batch_size: 64\n  cpu_threads: 4\n  estimated_repulsion_seconds: 3.695948838023469\n- batch_size: 128\n  cpu_threads: 4\n  estimated_repulsion_seconds: 3.128196412115358\n- batch_size: 256\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.921178254429833\n- batch_size: 512\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.8089094345850754\n- batch_size: 1024\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.666035347589059\n- batch_size: 2048\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.441164532725452\ntorch_version: 2.14.1+cu130\ngraph_shape:\n- 136997\n- 136997\ndirected_edges: 3729882\ninitial_reused_cells: 136997\ninitial_new_cells: 0\ninitial_dropped_cells: 0\ninitial_scale_multiplier: 1.0\n",
+      "url": "data/fafb-optimized.json.gz"
+    },
+    {
+      "id": "maslov-sneppen",
+      "name": "Maslov-Sneppen graph swap",
+      "description": "Final saved neuron positions · axes in model units; orientation is arbitrary. Run stopped at the evaluation limit.",
+      "cells": 136997,
+      "iteration": 27113,
+      "duration": "23 h 50 min 52 s",
+      "source": "20261106-221706-661964Z",
+      "config": "graph_path: output/graphs/fafb/rewired_seed4/directed_graph.npz\ncells_path: output/graphs/fafb/rewired_seed4/cells.csv\noutput_dir: output/runs/fafb\ndevice: cuda:1\ndtype: float32\np: 2\nwiring_p: 2.0\nrepulsion_p: 2.0\nseed: 5\ninitial_std: 0.1\nrescale_initial: true\ninitial_coordinates: null\nbatch_size: auto\nbatch_candidates:\n- 64\n- 128\n- 256\n- 512\n- 1024\n- 2048\n- 4096\n- 8192\n- 16384\n- 32768\n- 65536\n- 131072\nbatch_memory_mb: 16384\ncpu_threads: auto\nmax_iterations: 100000\nmax_evaluations: 30000\nmax_minutes: 0\nftol: 1.0e-18\ngtol: 1.0e-05\nmax_line_search_steps: 30\nlbfgs_history: 10\nsave_every_iterations: 2000\nsave_every_seconds: 10000000\nselected_device: cuda:1\nselected_batch_size: 2048\nselected_cpu_threads: 4\nbatch_benchmark:\n- batch_size: 64\n  cpu_threads: 4\n  estimated_repulsion_seconds: 3.5330423756386153\n- batch_size: 128\n  cpu_threads: 4\n  estimated_repulsion_seconds: 3.1273730682296446\n- batch_size: 256\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.925087642710423\n- batch_size: 512\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.8049003678679583\n- batch_size: 1024\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.72733160534699\n- batch_size: 2048\n  cpu_threads: 4\n  estimated_repulsion_seconds: 2.4464276787721246\ntorch_version: 2.14.1+cu130\ngraph_shape:\n- 136997\n- 136997\ndirected_edges: 3729882\ninitial_scale_multiplier: 45.238804886308756\n",
+      "url": "data/maslov-sneppen.json.gz"
+    }
+  ]
+}

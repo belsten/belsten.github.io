@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore FAFB neuron anchors and final wiring optimization models in 3D.">
+  <title>FAFB anchors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/plotly.min.js" defer></script>
+  <script src="assets/neuron-controls.js" defer></script>
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+    <aside class="sidebar" aria-label="Model selection and tools">
+      <section class="model-selection" aria-label="Choose a model">
+        <label class="field-label" for="run">Choose a run</label>
+        <select id="run" disabled><option>Loading models…</option></select>
+        <p id="description" class="description"></p>
+        <dl class="model-facts">
+          <div><dt>Neurons</dt><dd id="cell-count">—</dd></div>
+          <div id="iteration-row" hidden><dt>Saved iteration</dt><dd id="iteration">—</dd></div>
+          <div id="duration-row" hidden><dt>Run duration</dt><dd id="duration">—</dd></div>
+        </dl>
+        <a id="permalink" href="#">Link to this model <span aria-hidden="true">↗</span></a>
+      </section>
+      <details class="sidebar-section" id="view-tools" open>
+        <summary>Explore the scatter plot</summary>
+        <div id="tools"><p class="muted">Tools appear when the model is ready.</p></div>
+      </details>
+      <details class="sidebar-section" id="configuration">
+        <summary>Configuration parameters</summary>
+        <p class="source-label">Source</p>
+        <p id="source" class="source"></p>
+        <pre id="config" tabindex="0" aria-label="Model configuration"></pre>
+      </details>
+    </aside>
+    <section class="visualization" aria-label="Neuron positions">
+      <header class="plot-heading">
+        <h2 id="model-title">Loading model…</h2>
+        <span id="position-label" class="position-label"></span>
+      </header>
+      <div class="plot-stage" id="plot-stage" aria-busy="true">
+        <div id="plot-host"></div>
+        <div id="loading" class="plot-message" role="status" aria-live="polite">
+          <span class="loading-dot" aria-hidden="true"></span>
+          <p id="loading-message">Loading models…</p>
+        </div>
+        <div id="error" class="plot-message error-message" role="alert" hidden>
+          <strong>Could not load this model</strong>
+          <p id="error-message"></p>
+          <button id="retry" type="button">Try again</button>
+        </div>
+      </div>
+      <footer class="plot-help"><span>Drag to rotate · Scroll to zoom · Click a neuron to copy its ID</span><span>Click legend labels to hide or show groups</span></footer>
+    </section>
+  </main>
+  <noscript><p class="noscript">Enable JavaScript to explore these models.</p></noscript>
+</body>
+</html>
